@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-image: src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperaccess.com%2F3d-futuristic&psig=AOvVaw27VEsgXsoDNQtLaN8mA6gP&ust=1595034344345000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDpx5GM0-oCFQAAAAAdAAAAABAD";
+}
+
+.container {
+    display: flex;
+    z-index: 10;
+    margin-left: 55px;
+}
+
+.grid{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(255, 248, 157);
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.tetromino {
+    background-color: blue;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    position: fixed;
+    left: 315px;
+    top: 250px;
+    }
+
+#start-button {
+    margin: 10px;
+    height: 40px;
+    width: 180px;
+    background-color: rgb(72, 201, 21);
+    border: 1px solid rgb(100, 255, 39);
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px rgb(100, 255, 39);
+    position: fixed;
+    top: 200px;
+    left: 295px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+button:hover {
+    background-color: rgb(100, 255, 39);
+    color: white;
+}
+
+.mini-grid{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkgray;
+    margin-left: 75px;
+    border: 2px solid #000;
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+}

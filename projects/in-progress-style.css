@@ -1,0 +1,160 @@
+@import url(../nav-bar/nav-bar-style.css);
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #010615;
+}
+
+.wavy {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    width: 1200px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-size: 2em;
+    animation: animate 1.9s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+/*Animation for coming-soon...*/
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+}
+
+.gears-container {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: center;
+    z-index: -1;
+}
+
+.gear_wrp {
+background-color: #9E73C9;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+}
+
+.gear {
+position: relative;
+}
+
+.gear:after {
+content: "";
+position: absolute;
+width: 75px;
+height: 75px;
+left: 12px;
+top: 12px;
+border-radius: 50%;
+background-color: #010615;
+}
+
+.gear__bar {
+position: absolute;
+height: 120px;
+width: 20px;
+left: 40px;
+top: -10px;
+background-color: #9E73C9;
+border-radius: 5px
+}
+
+.first,
+.first .gear__bar {
+background-color: #8FE5D1;
+}
+
+.second {
+width: 200px;
+height: 200px;
+margin-left: 0px;
+margin-top: 12px;
+}
+
+.second .gear:after {
+width: 150px;
+height: 150px;
+left: 25px;
+top: 25px;
+}
+
+.second .gear__bar {
+height: 220px;
+width: 20px;
+left: 90px;
+top: -10px;
+}
+
+.gear__bar:nth-child(2) {
+transform: rotate(45deg)
+}
+
+.gear__bar:nth-child(3) {
+transform: rotate(90deg)
+}
+
+.gear__bar:nth-child(4) {
+transform: rotate(135deg)
+}
+
+.gear__bar:nth-child(5) {
+transform: rotate(22.5deg)
+}
+
+.gear__bar:nth-child(6) {
+transform: rotate(67.5deg)
+}
+
+.gear__bar:nth-child(7) {
+transform: rotate(157.5deg)
+}
+
+.gear__bar:nth-child(8) {
+transform: rotate(112.5deg)
+}
+
+/* Animation */
+
+@keyframes rotation {
+0% {transform: rotate(0deg)}
+100% {transform: rotate(360deg)}
+}
+
+@keyframes rotationInverted {
+0% {transform: rotate(0deg)}
+100% {transform: rotate(-360deg)}
+}
+
+.gear_wrp {
+animation: rotation 6s infinite linear;
+}
+
+.gear_wrp.second {
+animation: rotationInverted 12s infinite linear;
+}

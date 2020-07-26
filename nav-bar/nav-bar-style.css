@@ -1,0 +1,43 @@
+* {
+padding: 0;
+margin: 0;
+}
+
+.navbar {
+height: 65px;
+width: 100%;
+position: fixed;
+background-color: mintcream;
+}
+
+.container {
+max-width: 98%;
+margin: 0 auto;
+}
+
+.logo a {
+float: left;
+padding: 20px;
+color: hsl(0, 0%, 40%);
+}
+
+.menu {
+float: right;
+}
+
+.menu li {
+list-style: none;
+display: inline-block;
+}
+
+.menu li a {
+padding: 20px 30px;
+color: hsl(0, 0%, 60%);
+float: left;
+transition: color .3s ease-in-out;
+}
+
+.menu li a:hover {
+color: hsl(0, 0%, 30%);
+transition: color .5s ease-in-out;
+}
