@@ -1,0 +1,54 @@
+@import url(../nav-bar/nav-bar-style.css);
+
+.about-me-container {
+    max-width: 960px;
+    font-size: 14px;
+    position: relative;
+    color: #231F20;
+    font-family: "Open Sans";
+    margin: 0 auto;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    padding: 40px 220px;
+    line-height: 21px;
+}
+
+.about-me {
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.about-me-text {
+    width: 60%;
+    padding-right: 40px;
+}
+
+
+.about-me-container h2 {
+    font-family: "Playfair Display";
+    font-weight: 300;
+    color: #F38BA1;
+    padding: 20px 0;
+}
+
+.about-me-container span {
+    font-weight: 400;
+    color: #F38BA1;
+}
+
+.about-me-circle-image {
+    width: 240px;
+    height: 240px;
+    border: solid pink;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-pic {
+    height: 100%;
+    width: auto;
+    margin-left: -25%;
+}
