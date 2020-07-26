@@ -1,0 +1,134 @@
+@import url(../nav-bar/nav-bar-style.css);
+
+.home-main {
+    position: relative;
+    padding-top: 50px;
+}
+
+#hello {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2em;
+    font-family: 'Avenir';
+    color: rgb(0, 0, 0);
+}
+
+#tagline {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+}
+
+/* animation start */
+#hand {
+    position: inherit;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 5em;
+    animation: waving-hand 0.45s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes waving-hand {
+    from {
+        transform: rotate(40deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
+}
+/* animation end */
+
+.interactions {
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#click-me {
+    padding: 5px 15px;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+#hover-here {
+    padding: 5px 15px;
+    transform: translateX(5%);
+    background-color: black;
+    color: white;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+}
+
+#hover-here:hover{
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    margin-top: -3px;
+    margin-left: -3px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#surpriseBtn {
+    padding: 5px 15px;
+    transform: translateX(50%);
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+#modal {
+    pointer-events: none;
+    opacity: 0;
+    /*transition: opacity 0.3s;*/
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    background: yellow;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    right: 10px;
+    top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#close:hover, #close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.overlay {
+    pointer-events: none;
+    opacity: 0;
+    *transition: opacity 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
